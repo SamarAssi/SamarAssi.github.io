@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #101820;
+    color: #FEE715;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.header {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    font-size: 10px;
+}
+
+.header img {
+    width: 450px;
+}
+
+.header span {
+    color: white;
+    font-size: 300%;
+    letter-spacing: 5px;
+}
+
+.about {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+}
+
+.about img {
+    width: 350px;
+}
+
+.about p {
+    width: 70%;
+    font-size: 25px;
+}
+
+.about h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+a {
+    color: #FEE715;
+}
+
+a:visited {
+    color: #FEE715;
+}
+
+a:hover {
+    color: white;
+}
+
+.about2 {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 40px 0px;
+}
+
+.about2 h1 {
+    letter-spacing: 5px;
+
+}
+
+.images {
+    width: 350px;
+    height:350px;
+} 
+
+.card {
+    min-width: 600px;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+    margin: 3px;
+}
+
+ol {
+   height: 150px;
+   border: 1px solid rgb(254,231,20,.2);
+   text-align: left;
+   font-size: large;
+   padding-top: 15px;
+   border-radius: 15px;
+}
+
+@media screen and (max-width: 700px) { 
+    .header {
+        background-image: none;
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    .header img {
+        width: 200px;
+    }
+    .about {
+        margin-top: 0;
+        padding-top: 0;
+        background-image: none;
+        font-size: 10px;
+    }
+    .about p {
+        width: 90%;
+        font-size: 25px;
+    }
+    .about img  {
+        width: 200px;
+
+    }
+    .about2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about2 img {
+        width: 200px;
+        height: 200px;
+    }
+    .card {
+        min-width: 300px;
+        width: 100%;
+    }
+    ol {
+        width: 90%;
+        height: 100px;
+        border: none;
+        text-align: left;
+        font-size: medium;
+        padding-top: 15px;
+     }
+}
+
