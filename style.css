@@ -4,7 +4,7 @@ body {
     background: #101820;
     color: #FEE715;
     font-family: 'Courier New', Courier, monospace;
-
+    text-align: center;
 }
 .container {
     width: 100%;
