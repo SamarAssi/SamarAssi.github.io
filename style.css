@@ -51,6 +51,8 @@ body {
 .about p {
     width: 70%;
     font-size: 25px;
+    background-color: #FEE715;
+    color: #101820;
 }
 
 .about h1 {
