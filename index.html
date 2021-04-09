@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Samar Assi ! CV</title>
+        <title>Samar Assi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <button class="button" onclick="window.print()">Print Samar's Resume</button>
         <div class="About">
             <img src="undraw_teacher_35j2 (2).svg" alt="Me">
-            <h1>Hi everyone,<br>My name is <span>Samar Assi</span><br>I'm studying computer science at An-najah national university.</h1>
+            <h1>Hi everyone,<br>My name is <span onclick="myFunction()">Samar Assi</span><br>I'm studying computer science at An-najah national university.</h1>
         </div>
         <div class="Bio">
             <img src="undraw_influencer_d3xx (3).svg" alt="Me">
@@ -24,7 +25,7 @@
                 <a href="https://www.facebook.com/profile.php?id=100004781087890" target="_blank">Click here to show my Facebook account</a>  
             </p>
         </div>
-        <div class="Education">
+        <div class="Education" id="education">
             <img src="undraw_book_lover_mkck (2).svg" alt="me">
             <h1>Education</h1>
                 <ol>
@@ -49,12 +50,27 @@
             </ol>
         </div>
         <hr>
-        <div class="Work">
+        <div class="Work" id="work" onmouseover="changeColor()">
             <img src="undraw_working_late_pukg (2).svg" alt="me">
             <h1>Work</h1>
                 <ol>
                     <li>Still no job experience.</li>
                 </ol>
         </div>
+        <script>
+            function myFunction(){
+                alert("Welcome to Samar's site, please let me know if you have any questions");
+            }
+            function changeColor(){
+                document.getElementById("work").onmouseover=function(){moveOutside()};
+                document.getElementById("work").onmouseout=function(){moveInside()};
+            }
+            function moveInside(){
+                document.getElementById("education").style.color="#6C63FF";
+            }
+            function moveOutside(){
+                document.getElementById("education").style.color="green";
+            }
+        </script>
     </body>
 </html>
