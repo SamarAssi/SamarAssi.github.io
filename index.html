@@ -5,178 +5,126 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <style>
-            body{
-                background-color: #08415C;
-                color: white;
-                margin-left: 150px;
-            }
-            .navbar button{
-                border:none;
-                background-color: #08415C;
-                color: white;
-                width: 150px;
-            }
-            .navbar ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-            .navbar li{float: right;}
-            .navbar li button{
-                text-align: center;
-                padding: 15px;
-            }
-            .navbar li button:hover{background-color: #042230;}
-            span{
-                color: #CC2936;
-                font-size: 200%;
-                letter-spacing: 5px;
-                font-weight: bold;
-            }
-            img{
-                float: right;
-                margin-right: 80px;
-                width: 700px;
-                height: 400px;
-                max-width: 100%;
-            }
-           
-            .first button{
-                width:150px;
-                padding: 10px;
-                border: none;
-                margin-right: 20px;
-                margin-top: 30px;
-                border-radius: 5px;
-            }
-            .BR{
-                background-color: #CC2936;
-                color: white;
-            }
-            .BB{
-                background-color: #0a597e;
-                color: white;
-            }
-            .first h1{margin-top: 100px;}
-            .about,.Education,.Hobbies,.Work{
-                margin-top: 30px;
-                display: none;
-            }
-            a:visited{color:white;}
-            a:hover{color:#042230;}
-            @media screen and(max-width:630){
-                img{
-                    width: 300px;
-                    height: 150px;
-                    max-width: 100%;
-                }
-                .navbar button{
-                    width: 50px;
-                }
-                h1,h2,p,ul,ol{font-size: 10vw;}
-            }
-        </style>
+        <link rel="stylesheet" href="myStyle.css">
     </head>
     <body>
-        <div class="navbar" id="nav">
+        <div class="navbar">
             <ul>
-                <li><button style="margin-right: 80px;" onclick="funHo()">Hobbies</button></li>
-                <li><button onclick="funWo()">Work experience</button></li>
-                <li><button onclick="funEd()">Education</button></li>
-                <li><button onclick="funAb()">About</button></li>
-                <li><button onclick="funFi()">Home</button></li>
-              </ul>
+                <li><button onclick="funHobbies()">Hobbies</button></li>
+                <li><button onclick="funWork()">Work experience</button></li>
+                <li><button onclick="funEducation()">Education</button></li>
+                <li><button onclick="funAbout()">About</button></li>
+                <li><button onclick="funHome()">Home</button></li>
+                <li style="width: 605px;"><h2>Portfo<span>lio.</span></h2></li>
+            </ul>
         </div>
-        <div class="first" id="fi">
-            <img src="undraw_teacher_35j2 (3).svg" alt="web developer">
-            <h1><small>Hi There</small><br>I'm <span onclick="myFunction()">Samar Assi</span></h1>
-            <h2>I'm a web developer</h2>
-            <button class="BR" onclick="window.print()">Print Resume</button>
-            <button class="BB">Contact Me</button>
+        <div class="Home" id="home">
+            <div>
+                <h1>Hi There<br>I'm <span>Samar Assi</span></h1>
+                <h2>I'm web developer</h2>
+                <button class="BR">Resume</button>
+                <button class="BB">Contact Me</button>
+            </div>
+            <div>
+                <img src="undraw_teacher_35j2 (3).svg" alt="me">
+            </div>
         </div>
-        
-        <div class="about" id="ab">
-            <img src="undraw_influencer_d3xx (4).svg" alt="me">
-            <h1>About Me:</h1>
-            <p>
-                I got a high school diploma, with a GPA of 90.7, for the scientific branch and the DELF A1 level certificate from the French Consulate.<br>
-                <a href="DELF.jpeg" target="_blank">Click here to show the DELF A1 certificate</a>
-                <br>
-                I participated in the reading challenge competition.
-                <br>
-                <a href="https://www.facebook.com/profile.php?id=100004781087890" target="_blank">Click here to show my Facebook account</a>  
-            </p>
+        <div class="About" id="Ab">
+            <div>
+                <h1>About Me:</h1>
+                <p>
+                   I got a high school diploma, with a GPA of 90.7,<br> for the scientific branch and the DELF A1 level certificate from the French Consulate.<br>
+                   <a href="DELF.jpeg" target="_blank">Click here to show the DELF A1 certificate</a>
+                   <br>
+                   I participated in the reading challenge competition.
+                   <br>
+                   <a href="https://www.facebook.com/profile.php?id=100004781087890" target="_blank">Click here to show my Facebook account</a>  
+                </p>
+            </div>
+            <div>
+                <img src="undraw_influencer_d3xx (4).svg" alt="me">
+            </div>
         </div>
-        <div class="Education" id="ed">
-            <img src="undraw_education_f8ru (1).svg" alt="education">
-            <h1>Education</h1>
-            <ol>
-                <li><b>I graduated from Bedia Girls' Secondary School, the scientific branch, with a GPA of 90.7 .</b></li>
-                <li><b>I entered An-Najah Nationl University to study computer science (CS) in 2019, and I'm still studying it.</b></li>
-            </ol>
+        <div class="Education" id="Ed">
+            <div>
+                <h1>Education</h1>
+                <ol>
+                   <li><b>I graduated from Bedia Girls' Secondary School,<br> the scientific branch, with a GPA of 90.7 .</b></li>
+                   <li><b>I entered An-Najah Nationl University to study computer science (CS) in 2019,<br> and I'm still studying it.</b></li>
+                </ol>
+            </div>
+            <div>
+                <img src="undraw_education_f8ru (1).svg" alt="education">
+            </div>
         </div>
-        <div class="Hobbies" id="ho">
-            <img src="undraw_book_reading_kx9s (3).svg" alt="Hobbies">
-            <h1>Hobbies</h1>
-            <ol>
-                <li>Drawing.</li>
-                <li>Reading a novels.</li>
-                <li>
-                    Playing sports such as:
-                    <ul>
-                        <li>Swimming.</li>
-                        <li>Tinnes.</li>
-                    </ul>
-                </li>
-            </ol>
+        <div class="Work" id="Wo">
+            <div>
+                <h1>Work experience</h1>
+                <ol>
+                    <li>Still no job experience.</li>
+                </ol>
+            </div>
+            <diV>
+                <img src="undraw_working_late_pukg (3).svg" alt="work">
+            </diV>
         </div>
-        <div class="Work" id="wo">
-            <img src="undraw_working_late_pukg (3).svg" alt="work" width="650px" height="300px">
-            <h1>Work</h1>
-            <ol>
-                <li>Still no job experience.</li>
-            </ol>
+        <div class="Hobbies" id="Ho">
+            <div>
+                <h1>Hobbies</h1>
+                <ol>
+                   <li>Drawing.</li>
+                   <li>Reading a novels (The three musketeers , Anna Karenia).</li>
+                   <li>
+                      Playing sports such as:
+                      <ul>
+                         <li>Swimming.</li>
+                         <li>Tinnes.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <img src="undraw_book_reading_kx9s (3).svg" alt="Hobbies">
+            </div>
         </div>
         <script>
-            function myFunction(){
+              function myFunction(){
                 alert("Welcome to Samar's site, please let me know if you have any questions");
             }
-            function funEd(){
-                document.getElementById('ed').style.display="block";
-                document.getElementById('fi').style.display="none";
-                document.getElementById('ab').style.display="none";
-                document.getElementById('ho').style.display="none";
-                document.getElementById('wo').style.display="none";
+            function funHome(){
+                document.getElementById('home').style.display="block";
+                document.getElementById('Ab').style.display="none";
+                document.getElementById('Ed').style.display="none";
+                document.getElementById('Wo').style.display="none";
+                document.getElementById('Ho').style.display="none";
             }
-            function funHo(){
-                document.getElementById('ed').style.display="none";
-                document.getElementById('fi').style.display="none";
-                document.getElementById('ab').style.display="none";
-                document.getElementById('ho').style.display="block";
-                document.getElementById('wo').style.display="none";
+            function funAbout(){
+                document.getElementById('home').style.display="none";
+                document.getElementById('Ab').style.display="block";
+                document.getElementById('Ed').style.display="none";
+                document.getElementById('Wo').style.display="none";
+                document.getElementById('Ho').style.display="none";
             }
-            function funWo(){
-                document.getElementById('ed').style.display="none";
-                document.getElementById('fi').style.display="none";
-                document.getElementById('ab').style.display="none";
-                document.getElementById('ho').style.display="none";
-                document.getElementById('wo').style.display="block";
+            function funEducation(){
+                document.getElementById('home').style.display="none";
+                document.getElementById('Ab').style.display="none";
+                document.getElementById('Ed').style.display="block";
+                document.getElementById('Wo').style.display="none";
+                document.getElementById('Ho').style.display="none";
             }
-            function funFi(){
-                document.getElementById('ed').style.display="none";
-                document.getElementById('fi').style.display="block";
-                document.getElementById('ab').style.display="none";
-                document.getElementById('ho').style.display="none";
-                document.getElementById('wo').style.display="none";
+            function funWork(){
+                document.getElementById('home').style.display="none";
+                document.getElementById('Ab').style.display="none";
+                document.getElementById('Ed').style.display="none";
+                document.getElementById('Wo').style.display="block";
+                document.getElementById('Ho').style.display="none";
             }
-            function funAb(){
-                document.getElementById('ed').style.display="none";
-                document.getElementById('fi').style.display="none";
-                document.getElementById('ab').style.display="block";
-                document.getElementById('ho').style.display="none";
-                document.getElementById('wo').style.display="none";
+            function funHobbies(){
+                document.getElementById('home').style.display="none";
+                document.getElementById('Ab').style.display="none";
+                document.getElementById('Ed').style.display="none";
+                document.getElementById('Wo').style.display="none";
+                document.getElementById('Ho').style.display="block";
             }
         </script>
     </body>

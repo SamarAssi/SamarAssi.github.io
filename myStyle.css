@@ -1,0 +1,64 @@
+body{
+    background-color: #08415C;
+    color: white;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar button{
+    border: none;
+    background-color: #08415C;
+    color: white;
+}
+.navbar li{float: right;}
+.navbar li button{
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+}
+.navbar li button:hover{background-color: #042230;}
+.Home,.About,.Education,.Work,.Hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Home > div,.About > div,.Education > div,.Work > div,.Hobbies > div{
+    padding: 30px;
+    margin: 10px;
+}
+img{
+    width: 600px;
+    height: 300px;
+}
+.navbar span{
+    color: #CC2936;
+}
+.Home span{
+    color: #CC2936;
+    letter-spacing: 5px;
+    font-size: 200%;
+}
+.Home button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    margin-top: 50px;
+}
+.BR{
+    background-color: #CC2936;
+    color: white;
+    margin-right: 20px;
+}
+.BB{
+    background-color: #042230;
+    color: white;
+}
+a:visited{color: white;}
+a:hover{color: #042230;}
+.About,.Education,.Hobbies,.Work{
+    display: none;
+}
