@@ -71,4 +71,5 @@ a:hover{color: #042230;}
         max-width: 100%;
     }
     h1,h2,p,ol,ul{font-size: 10vw;}
+    .navbar li button{width: 50px;}
 }
