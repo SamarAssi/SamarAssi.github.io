@@ -12,3 +12,6 @@ function print(index){
         }
     }
 }
+function myfunction(){
+    window.location.href="index1.html";
+}
