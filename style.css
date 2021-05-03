@@ -139,37 +139,3 @@ button:hover {
 .border {
     border-bottom: 3px solid crimson;
 }   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and(max-width:360){
-    .hello{font-size: 30vw;}
-    .name{font-size: 40vw;}
-    .text button{font-size: 10vw;}
-    .about .text {
-        width: 60%;
-        font-size: 15vw;
-    }
-    button{
-        font-size: 13vw;
-    }
-}    
