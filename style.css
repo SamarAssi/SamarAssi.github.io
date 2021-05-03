@@ -152,5 +152,5 @@ button:hover {
         max-width: 100%;
     }
     h1,p,ul,ol{font-size: 10vw;}
-    .header{flex-direction: column;}
+    .header,.nav,.about:first-child{flex-direction: column;}
 }

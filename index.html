@@ -1,139 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Form</title>
+        <title>Samar Assi</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <style>
-            @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-            body{
-                color:rgb(44, 99, 121);
-                padding: 0;
-                margin: 0;
-                text-align: center;
-            }
-            .fo{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                margin-top: 170px;
-            }
-            span{
-                color: rgb(204, 61, 83);
-                letter-spacing: 5px;
-            }
-            .text{
-                overflow: hidden;
-                padding: 5px 0;
-                margin: 5px 0;
-            }
-            fieldset input{
-                border: none;
-                border-bottom: 1px solid rgb(44, 99, 121);
-            }
-            .header{
-                margin: 0;
-                padding: 10px;
-                background-color: rgb(44, 99, 121);
-                color: white;
-            }
-            .submit{
-                width:15%;
-                background-color: rgb(44, 99, 121);
-                color: white;
-                border: none;
-                border-radius: 10px;
-                padding: 10px;
-            }
-            .button{
-                width:5%;
-                background-color: white;
-                color:rgb(44, 99, 121);
-                border-radius: 10px;
-                border:1px solid rgb(44, 99, 121);
-                padding:10px;
-            }
-            .footer{
-                margin-top: 700px;
-            }
-            .submit:hover{
-                background-color: rgb(20, 47, 58);
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="style.css">
+        <script src="myJS.js" defer></script>    
     </head>
     <body>
         <div class="header">
-            <h1>CONTABI<span>LIT</span>à..</h1>
-            <h1>Internship <span>Application</span></h1>
-            <p>Please fill out the form below and hit submit to be considered for the internship</p>
+            <div class="test">
+                <h1>
+                    <span class="hello">Hello There,</span>
+                    <br>
+                    <span class="name">Samar Assi</span>
+                </h1>
+                <button class="apply" onclick="myfunction()">Apply Now</button>
+            </div>
+            <img src="undraw_teacher_35j2 (3).svg" alt="me">
         </div>
-        <div class="fo">
-            <form onsubmit="required();">
-                <fieldset>
-                    <legend>Personalia:</legend>
-                    <label>First name : </label>
-                    <div class="text">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                        <input type="text" name="firstName">
-                    </div>
-                    <label>Last name : </label>
-                    <div class="text">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                        <input type="text" name="lastName">
-                    </div>
-                    <label>Personal website : </label>
-                    <div class="text">
-                        <i class="fa fa-male" aria-hidden="true"></i>
-                        <input type="text" name="personal website">
-                    </div>
-                    <label>Enter a phone number : </label>
-                    <div class="text">
-                        <i class="fa fa-mobile" aria-hidden="true"></i> 
-                        <input type="tel" name="phone number" placeholder="123-45-678">
-                    </div>
-                    <label>Enter your email : </label>
-                    <div class="text">
-                        <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                        <input type="email" name="email">
-                    </div>
-                    <label>Username : </label>
-                    <div class="text">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" name="username">
-                    </div>
-                    <label>Password : </label>
-                    <div class="text">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                        <input type="password" name="password">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Education:</legend>
-                    <label>Degree : </label>
-                    <div class="text">
-                        <i class="fa fa-percent" aria-hidden="true"></i>
-                        <input type="number" name="degree">
-                    </div>
-                    <label>When will you graduate : </label>
-                    <div class="text">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        <input type="date" name="date">
-                    </div>
-                    <label>Upload your CV and other documents : </label>
-                    <div class="text">
-                        <i class="fa fa-file" aria-hidden="true"></i>
-                        <input type="file" name="files" style="border-bottom: none;" multiple>
-                    </div>
-                </fieldset>
-            </form>
+
+        <div class="nav">
+            <button onclick="print(0)" class="border">About Me</button>
+            <button onclick="print(1)">Education</button>
+            <button onclick="print(2)">Hobbies</button>
+            <button onclick="print(3)">Work</button>
         </div>
-        <div class="footer">
-            <input type="submit" value="Submit" class="submit">
-            <input type="button" value="Save" class="button">
-            <input type="reset" value="Reset" class="button">
+
+        <div class="about-container">
+            <div class="about" id="ab">
+                <div class="test">
+                    <p>
+                    I got a high school diploma, with a GPA of 90.7,<br> for the scientific branch and the DELF A1 level certificate from the French Consulate.<br>
+                   <a href="DELF.jpeg" target="_blank">Click here to show the DELF A1 certificate</a>
+                   <br>
+                   I participated in the reading challenge competition.
+                   <br>
+                   <a href="https://www.facebook.com/profile.php?id=100004781087890" target="_blank">Click here to show my Facebook account</a> 
+                   </p>
+                </div>
+                <img src="undraw_influencer_d3xx (4).svg" alt="me">
+            </div>
+
+            <div class="about">
+                <div class="test">
+                    <ol>
+                        <li><b>I graduated from Bedia Girls' Secondary School,<br> the scientific branch, with a GPA of 90.7 .</b></li>
+                        <li><b>I entered An-Najah Nationl University to study computer science (CS) in 2019,<br> and I'm still studying it.</b></li>
+                     </ol>
+                </div>
+                <img src="undraw_education_f8ru (1).svg" alt="me">
+            </div>
+
+            <div class="about">
+                <div class="test">
+                    <ol>
+                        <li>Drawing.</li>
+                        <li>Reading a novels (The three musketeers , Anna Karenia).</li>
+                        <li>
+                           Playing sports such as:
+                           <ul>
+                              <li>Swimming.</li>
+                              <li>Tinnes.</li>
+                             </ul>
+                         </li>
+                    </ol>
+                </div>
+                <img src="undraw_book_reading_kx9s (3).svg" alt="me">
+            </div>
+
+            <div class="about">
+                <div class="test">
+                    <ol>
+                        <li>Still no job experience.</li>
+                    </ol>
+                </div>
+                <img src="undraw_working_late_pukg (3).svg" alt="me">
+            </div>
         </div>
-        <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#002bdc88"></stop><stop offset="95%" stop-color="#32ded488"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 117.56937799043064,161.99043062200957 235.13875598086128,123.98086124401911 323,141 C 410.8612440191387,158.0191387559809 469.01435406698556,230.06698564593302 551,226 C 632.9856459330144,221.93301435406698 738.8038277511963,141.75119617224883 839,135 C 939.1961722488037,128.24880382775117 1033.7703349282297,194.92822966507177 1133,218 C 1232.2296650717703,241.07177033492823 1336.1148325358852,220.53588516746413 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#002bdcff"></stop><stop offset="95%" stop-color="#32ded4ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 74.80382775119617,392.066985645933 149.60765550239233,384.13397129186603 241,373 C 332.39234449760767,361.86602870813397 440.37320574162675,347.5311004784689 552,364 C 663.6267942583733,380.4688995215311 778.8995215311006,427.74162679425837 876,435 C 973.1004784688994,442.25837320574163 1052.0287081339713,409.5023923444976 1143,397 C 1233.9712918660287,384.4976076555024 1336.9856459330144,392.2488038277512 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
     </body>
 </html>
