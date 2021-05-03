@@ -152,5 +152,19 @@ button:hover {
         max-width: 100%;
     }
     h1,p,ul,ol{font-size: 10vw;}
-    .header,.nav,.about:first-child{flex-direction: column;}
+    .header{
+        flex-direction: column;
+        width: 50%;
+        height: 250px;
+        padding-bottom: 15px;
+    }
+    .nav,.about:first-child{flex-direction: column;}
+    button{
+        padding: 15px;
+        margin: 0px 20px;
+    }
+    .text button{
+        padding: 10px 25px;
+        margin: 10px 0px 0px; 
+    }
 }
