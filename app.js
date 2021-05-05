@@ -1,4 +1,7 @@
 const about=document.getElementsByClassName('about');
+for(let i=1;i<about.length;i++){
+    about[i].style.display='none';
+}
 function print(index){
     for(let i=0;i<about.length;i++){
         if(i==index){
@@ -13,7 +16,7 @@ function print(index){
     }
 }
 function myfunction(){
-    window.location.href="index.html";
+    window.location.href="form.html";
 }
 
 
