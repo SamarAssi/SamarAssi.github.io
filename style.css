@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 
@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;/**/
+    flex-wrap: wrap;
     padding-bottom: 25px;
 }
 
@@ -178,7 +178,7 @@ button:hover {
     }
     .hello {
         font-size: 7vw;
-        display: inline;
+        display: inline;/*?*/
     }
     .name {
         font-size: 12vw;
